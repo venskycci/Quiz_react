@@ -1,22 +1,25 @@
-body{background-image:url('images/background.png');
-  background-size:cover;
+
+#root{
+      
+      height: 800px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  
   
   
   
  }
+ body{background-image:url('images/background.png');
+  background-size:cover;
+  width: auto;
+  height: auto;
+   }
  
 #contenedor{height:auto;
          width: 500px;
-         margin-left: auto;
-         margin-right: auto;
-         margin-top:30px;
-         
-        
-         
-        
-        
-        
-}
+  }
 
 #country{width:auto;
      height:auto;
@@ -25,26 +28,22 @@ body{background-image:url('images/background.png');
      font-size:240%;
      margin-top:5px;
      float:left;
-     
-     font-family:cursive;
+     font-family:Verdana, Geneva, Tahoma, sans-serif;
      font-weight:bold;
      
 }
 #cabeza{height:60px;
      width:500px;
      position:relative;
-     
-     }
+}
 
 aside{float:right;
    height:135px;
    width:150px;
    position:absolute;
    top: -30px;;
-   right:0;
-   
-   
-  }
+   right:10px;
+   }
 
 #cuerpo{height:auto;
      width:auto;
@@ -57,8 +56,6 @@ aside{float:right;
 }
 #preguntas{height:auto;
            width:auto;
-       
-        
         text-align:center;
         display:flex;
         justify-content:center;
@@ -203,3 +200,48 @@ p span{float:none;
        text-align: center;
       color:white;
       font-size:120%;}
+
+
+
+
+
+@media screen and (max-width: 400px) and (min-width: 250px) {  
+
+
+  body{background-size:700px 1000px;
+       background-repeat:repeat-y;
+     
+     }
+
+  #root{
+    margin-left: 45px;
+    width: 450px;
+    height: 600px;
+    margin-top: 0px;
+    }
+
+#contenedor{height:auto;
+    width: 450px;
+    }
+
+#country{width:auto;
+  height:auto;
+  margin-bottom:auto;
+  color:white;
+  font-size:224%;
+  margin-top:18px;
+  float:left;
+  }
+
+  aside{float:right;
+      height:90px;
+      width:100px;
+      position:absolute;
+      top: 0px;
+      right: 85px;
+      }
+
+aside img{width: 135px;
+          height: 115px;}
+
+}
